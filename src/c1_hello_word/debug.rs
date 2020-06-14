@@ -5,7 +5,6 @@
     The fmt::Debug trait makes this very straightforward. All types can derive (automatically create) the fmt::Debug implementation.
     This is not true for fmt::Display which must be manually implemented.
 */
-#[allow(dead_code)]
 pub fn debug_1() {
     // This structure cannot be printed either with `fmt::Display` or
     // with `fmt::Debug`.
@@ -19,7 +18,6 @@ pub fn debug_1() {
 }
 
 // All std library types automatically are printable with {:?} too:
-#[allow(dead_code)]
 pub fn debug_2() {
     // Derive the `fmt::Debug` implementation for `Structure`. `Structure`
     // is a structure which contains a single `i32`.

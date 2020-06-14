@@ -55,7 +55,7 @@ impl Display for Color {
     }
 }
 
-#[allow(dead_code)]
+
 pub fn formatting() {
     for city in [
         City { name: "Dublin", lat: 53.347778, lon: -6.259722 },

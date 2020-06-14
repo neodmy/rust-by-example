@@ -7,7 +7,6 @@
 // Import (via `use`) the `fmt` module to make it available.
 use std::fmt;
 
-#[allow(dead_code)]
 pub fn display_1() {
     // Define a structure for which `fmt::Display` will be implemented. This is
     // a tuple struct named `Structure` that contains an `i32`.
@@ -45,7 +44,7 @@ pub fn display_1() {
 
     This is not a problem though because for any new container type which is not generic,fmt::Display can be implemented.
 */
-#[allow(dead_code)]
+
 pub fn display_2() {
     // A structure holding two numbers. `Debug` will be derived so the results can
     // be contrasted with `Display`.
@@ -112,7 +111,7 @@ pub fn display_2() {
     Display: 3.3 + 7.2i
     Debug: Complex { real: 3.3, imag: 7.2 }
 */
-#[allow(dead_code)]
+
 pub fn display_activity() {
     #[derive(fmt::Debug)]
     struct Complex {
@@ -152,7 +151,7 @@ pub fn display_activity() {
 
     try!(write!(f, "{}", value));
 */
-#[allow(dead_code)]
+
 pub fn testcase_list() {
     // With ? available, implementing fmt::Display for a Vec is straightforward:
 
@@ -187,7 +186,7 @@ pub fn testcase_list() {
     println!("{}", v);
 }
 
-#[allow(dead_code)]
+
 pub fn testcase_list_activity() {
     struct List(Vec<i32>);
 

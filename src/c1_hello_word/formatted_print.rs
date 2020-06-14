@@ -9,7 +9,6 @@
     All parse text in the same fashion. As a plus, Rust checks formatting correctness at compile time.
 */
 
-#[allow(dead_code)]
 pub fn formatted_print() {
     // In general, the `{}` will be automatically replaced with any
     // arguments. These will be stringified.
@@ -65,7 +64,7 @@ pub fn formatted_print() {
     shown. For the purposes of this exercise, use let pi = 3.141592 as an estimate for pi. (Hint: 
     you may need to check the std::fmt documentation for setting the number of decimals to display)
 */
-#[allow(dead_code)]
+
 pub fn formatted_print_activity() {
     let pi = 3.141592;
     println!("Pi is roughly {:.3}", pi);
